@@ -4,7 +4,7 @@ import React from "react";
 
 const Navitem = ({ mobile }: { mobile?: boolean }) => {
   const { data: session, status } = useSession();
-  console.log({ session }, status);
+
   return (
     <ul className={`text-md justify-center flex gap-4 w-full items-center ${mobile && "flex-col h-full"}`}>
       <li className="py-2 text-center border-b-4 cursor-pointer">
