@@ -2,10 +2,11 @@ version: "3"
 services:
   db:
     image: postgres:latest
+    container_name: postgres_typeorm_container
     restart: always
     ports:
       - "5432:5432"
-    enviroment:
+    environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "password"
     volumes:
