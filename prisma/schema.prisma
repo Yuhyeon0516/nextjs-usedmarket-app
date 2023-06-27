@@ -60,6 +60,7 @@ model User {
   favoriteIds String[]
 
   conversations Conversation[]
+  
   sendMessages Message[] @relation("sender")
   receivedMessages Message[] @relation("receiver")
 } 
