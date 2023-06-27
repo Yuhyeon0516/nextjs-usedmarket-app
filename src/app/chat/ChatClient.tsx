@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { TUserWithChat } from "../../../types";
 import Contacts from "@/components/chat/Contacts";
+import Chat from "@/components/chat/Chat";
 
 interface ChatClientProps {
   currentUser: User | null;
@@ -40,7 +41,9 @@ const ChatClient = ({ currentUser }: ChatClientProps) => {
         <section className={`md:flex ${layout && "hidden"}`}>
           <Contacts users={users} currentUser={currentUserWithMessage} setLayout={setLayout} setReceiver={setReceiver} />
         </section>
-        <section className={`md:flex ${!layout && "hidden"}`}>Chat Component</section>
+        <section className={`md:flex ${!layout && "hidden"}`}>
+          <Chat currentUser={currentUserWithMessage} receiver={receiver} setLayout={setLayout} />
+        </section>
       </div>
     </main>
   );
