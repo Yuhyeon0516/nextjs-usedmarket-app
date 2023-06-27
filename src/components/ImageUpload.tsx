@@ -11,8 +11,9 @@ const ImageUpload = ({ onChange, value }: ImageUploadProps) => {
   const handleUpload = (result: any) => {
     onChange(result.info.secure_url);
   };
+  const uploadPreset = process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET;
   return (
-    <CldUploadWidget onUpload={handleUpload} uploadPreset={"abcd"} options={{ maxFiles: 1 }}>
+    <CldUploadWidget onUpload={handleUpload} uploadPreset={uploadPreset} options={{ maxFiles: 1 }}>
       {({ open }) => {
         return (
           <div
