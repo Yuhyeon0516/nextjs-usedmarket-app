@@ -35,7 +35,7 @@ const useFavorite = ({ productId, currentUser }: UseFavorite) => {
       await request();
       router.refresh();
 
-      hasFavorite ? toast.success("삭제하였습니다.") : toast.success("추가하였습니다.");
+      hasFavorite ? toast.success("즐겨찾기에서 삭제하였습니다.") : toast.success("즐겨찾기에 추가하였습니다.");
     } catch (error) {
       toast.error("즐겨찾기 수정에 실패했습니다.");
     }
