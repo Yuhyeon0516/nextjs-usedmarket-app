@@ -27,7 +27,7 @@ const ProductClient = ({ product, currentUser }: ProductClientProps) => {
         <div className="flex flex-col gap-6">
           <ProductHead title={product.title} imageSrc={product.imageSrc} id={product.id} currentUser={currentUser} />
           <div className="grid grid-cols-1 mt-6 md:grid-cols-2 md:gap-10">
-            <ProductInfo user={product.user} category={category!} createdAt={product.createdAt} description={product.description} />
+            <ProductInfo user={product.user} category={category} createdAt={product.createdAt} description={product.description} />
             <div>
               <KakaoMap detailPage latitude={product.latitude} longitude={product.longitude} />
             </div>
