@@ -23,7 +23,7 @@ const User = ({ user, currentUserId }: UserProps) => {
         {latestMessage && <p className="overflow-hidden text-xs font-medium text-gray-600 break-words whitespace-pre-wrap">{latestMessage.text}</p>}
         {latestMessage && latestMessage.image && <p className="text-xs font-medium text-gray-600">[이미지]</p>}
       </div>
-      <div>{latestMessage && <p>{fromNow(latestMessage.createdAt)}</p>}</div>
+      <div className="text-gray-300 text-sm">{latestMessage && <p>{fromNow(latestMessage.createdAt)}</p>}</div>
     </div>
   );
 };
