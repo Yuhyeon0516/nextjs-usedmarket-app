@@ -17,7 +17,6 @@ const ChatClient = ({ currentUser }: ChatClientProps) => {
     receiverName: "",
     receiverImage: "",
   });
-  console.log(currentUser);
 
   const [layout, setLayout] = useState(false);
 
