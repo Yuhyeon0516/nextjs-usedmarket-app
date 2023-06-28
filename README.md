@@ -24,6 +24,7 @@ Pagination의 경우 동적으로 제작되었으며 한 페이지에 최대 6�
 https://github.com/Yuhyeon0516/nextjs-usedmarket-app/assets/120432007/264c47e7-93dc-4492-a749-d2870e8b2a1b
 
 <hr/>
+
 ## SignIn
 
 SignIn(Login)은 SignIn Button을 Click 시 Login Page로 넘어가게되고 Login에 성공하면<br/> NavigationBar에 SignIn Button을 삭제하고, Chat과 SignOut Button을 추가된 Layout으로 보여지게됩니다.<br/>
