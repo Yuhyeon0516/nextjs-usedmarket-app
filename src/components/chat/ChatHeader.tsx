@@ -26,7 +26,7 @@ const ChatHeader = ({ setLayout, receiverName, receiverImage, lastMessageTime }:
           </div>
           <h2 className="text-lg font-semibold">
             {receiverName}
-            {lastMessageTime && <p className="text-gray-600">{formatTime(lastMessageTime)}</p>}
+            {lastMessageTime && <p className="text-gray-500">{formatTime(lastMessageTime)}</p>}
           </h2>
         </div>
       </div>
